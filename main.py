@@ -42,15 +42,15 @@ LOGGER = logging.getLogger(__name__)
 
 api_id = int(os.environ.get("APP_ID","18049084"))
 api_hash = os.environ.get("API_HASH","7e74b1e22026fcc291d32b3d431aa21e")
-bot_token = os.environ.get("TOKEN","") # Botunuzun Tokenini Girin.
-sahib = os.environ.get("sahib", "") # Sahiplik Hesabin Kullanıcı Adını Girin .
-BOT_ID = int(os.environ.get("BOT_ID", "")) # Botunuzun İd'si ( Tokenin Başındaki Rakamları ) Girin .
-DATABASE_URL = os.environ.get("DATABASE_URL","") # MongoDB veritabanınızın url'si.
-BOT_USERNAME = os.environ.get("BOT_USERNAME","") # Botunuzun kullanıcı adı.
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","")) # Botunuzun eylemleri kaydedeceği kayıt grubunun id'si.
-GROUP_SUPPORT = os.environ.get("GROUP_SUPPORT", "") # Botunuzdan yasaklanan kullanıcıların itiraz işlemleri için başvuracağı grup, kanal veya kullanıcı. Boş bırakırsanız otomatik olarak OWNER_ID kimliğine yönlendirecektir.
+bot_token = os.environ.get("TOKEN","6322898469:AAE5B5KK9zz1zFmlJcshN8drkg6fpeu4qtw") # Botunuzun Tokenini Girin.
+sahib = os.environ.get("sahib", "LaaWnes") # Sahiplik Hesabin Kullanıcı Adını Girin .
+BOT_ID = int(os.environ.get("BOT_ID", "6322898469")) # Botunuzun İd'si ( Tokenin Başındaki Rakamları ) Girin .
+DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://laawnes6: laawnes6@cluster0.weo17y1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # MongoDB veritabanınızın url'si.
+BOT_USERNAME = os.environ.get("BOT_USERNAME","laawnestaggerbot") # Botunuzun kullanıcı adı.
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","-1001841739286")) # Botunuzun eylemleri kaydedeceği kayıt grubunun id'si.
+GROUP_SUPPORT = os.environ.get("GROUP_SUPPORT", "laawnesbotsduyuru") # Botunuzdan yasaklanan kullanıcıların itiraz işlemleri için başvuracağı grup, kanal veya kullanıcı. Boş bırakırsanız otomatik olarak OWNER_ID kimliğine yönlendirecektir.
 GONDERME_TURU = os.environ.get("GONDERME_TURU", True) # Botunuzun yanıtladığınız mesajı gönderme türü. Eğer direkt iletmek isterseniz False, kopyasını göndermek isterseniz True olarak ayarlayın.
-OWNER_ID = int(os.environ.get("OWNER_ID","")) # Sahip hesabın id'si
+OWNER_ID = int(os.environ.get("OWNER_ID","6171509336")) # Sahip hesabın id'si
 LANGAUGE = os.environ.get("LANGAUGE", "TR")
 
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
